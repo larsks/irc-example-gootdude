@@ -1,0 +1,8 @@
+- hosts: all
+  roles:
+    - testrole
+
+- hosts: all
+  tasks:
+    - debug:
+        msg: "password is: {{password}}"
